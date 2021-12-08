@@ -6,18 +6,14 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  useCatch
+  useCatch,
 } from "remix";
 
-import styles from "./tailwind.css";
-import base from "./styles/tailwind.css"
+import styles from "./styles/tailwind.css";
 
 // https://remix.run/api/app#links
 export let links = () => {
-  return [
-    { rel: "stylesheet", href: styles },
-    { rel: "stylesheet", href: base}
-  ];
+  return [{ rel: "stylesheet", href: styles }];
 };
 
 // https://remix.run/api/conventions#default-export
